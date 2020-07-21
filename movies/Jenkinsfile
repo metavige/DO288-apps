@@ -5,11 +5,11 @@ pipeline {
     }
     agent {
       node {
-        label = 'maven'
+        label 'maven'
       }
     }
 
-    environment { 
+    environment {
         DEV_PROJECT = "ricky-cc-chiang-mail-mli-com-movies-dev"
         STAGE_PROJECT = "ricky-cc-chiang-mail-mli-com-movies-stage"
         APP_GIT_URL = "https://github.com/metavige/DO288-apps"
