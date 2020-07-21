@@ -99,7 +99,7 @@ pipeline {
                         }
                     }
                 }
-    `       }
+           }
         }
 
         stage('Promote to Staging Env') {
