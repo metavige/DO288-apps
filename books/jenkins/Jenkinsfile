@@ -10,8 +10,8 @@ pipeline {
     }
 
     environment {
-        DEV_PROJECT = "metavige-books-dev"
-        STAGE_PROJECT = "metavige-books-stage"
+        DEV_PROJECT = "ricky-cc-chiang-mail-mli-com-books-dev"
+        STAGE_PROJECT = "ricky-cc-chiang-mail-mli-com-books-stage"
         APP_GIT_URL = "https://github.com/metavige/DO288-apps"
         NEXUS_SERVER = "http://nexus-common.apps.ocp-ap3.prod.nextcle.com/repository/nodejs"
 
