@@ -10,7 +10,8 @@ reqServer = process.env.HTTP_TEST_SERVER || server;
 
 describe('Books App routes test', () => {
   it('GET to / should return 200', (done) => {
-    chai.request(reqServer)
+    chai
+      .request(reqServer)
       .get('/')
       .end((err, res) => {
         expect(res).to.have.status(200);
@@ -20,7 +21,8 @@ describe('Books App routes test', () => {
   });
 
   it('GET to /books should return 200', (done) => {
-    chai.request(reqServer)
+    chai
+      .request(reqServer)
       .get('/books')
       .end((err, res) => {
         expect(res).to.have.status(200);
@@ -30,11 +32,12 @@ describe('Books App routes test', () => {
   });
 
   it('GET to /authors should return 200', (done) => {
-    chai.request(reqServer)
+    chai
+      .request(reqServer)
       .get('/authors')
       .end((err, res) => {
         expect(res).to.have.status(200);
-        expect(res.text).to.include('James_Joyce');
+        expect(res.text).to.include('James Joyce');
         done();
       });
   });
